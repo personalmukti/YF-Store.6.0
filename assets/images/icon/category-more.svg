@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>ic-more-48@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ic-more-48" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="container" fill="#F5FAFF" cx="24" cy="24" r="24"></circle>
+        <g id="Group-2" transform="translate(12.000000, 12.000000)">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            <g id="Group" transform="translate(3.000000, 3.000000)">
+                <path d="M3,12 L7,12 L7,12 L7,17 L2,17 L2,13 C2,12.4477153 2.44771525,12 3,12 Z" id="Rectangle-5-Copy-10" fill="#D5E0EE"></path>
+                <path d="M3,2 L7,2 L7,2 L7,7 L2,7 L2,3 C2,2.44771525 2.44771525,2 3,2 Z" id="Rectangle-5-Copy-16" fill="#D5E0EE"></path>
+                <path d="M13,12 L17,12 L17,12 L17,17 L12,17 L12,13 C12,12.4477153 12.4477153,12 13,12 Z" id="Rectangle-5-Copy-15" fill="#D5E0EE"></path>
+                <path d="M13,2 L17,2 L17,2 L17,7 L12,7 L12,3 C12,2.44771525 12.4477153,2 13,2 Z" id="Rectangle-5-Copy-17" fill="#D5E0EE"></path>
+                <rect id="Rectangle-5-Copy-11" stroke="#1C3D79" x="0.5" y="10.5" width="7" height="7" rx="2"></rect>
+                <rect id="Rectangle-5-Copy-13" stroke="#1C3D79" x="10.5" y="10.5" width="7" height="7" rx="2"></rect>
+                <rect id="Rectangle-5-Copy-12" stroke="#1C3D79" x="0.5" y="0.5" width="7" height="7" rx="2"></rect>
+                <rect id="Rectangle-5-Copy-14" stroke="#1C3D79" x="10.5" y="0.5" width="7" height="7" rx="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

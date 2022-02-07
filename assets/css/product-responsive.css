@@ -1,0 +1,102 @@
+@media screen and (max-width: 1250px) {
+	div.wrapper {
+		width: 1000px;
+	}
+
+	div.wrapper div.core {
+		width: 1000px;
+	}
+
+	div.wrapper div.core div.main-product {
+		margin-left: 50px;
+		width: 850px;
+	}
+
+	div.wrapper div.core div.main-product div.card {
+		margin-bottom: 20px;
+		width: 159px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	div.wrapper {
+		width: 800px;
+	}
+
+	div.wrapper div.core {
+		width: 800px;
+	}
+
+	div.wrapper div.core div.main-product {
+		margin-left: 18px;
+		margin-top: 0;
+		width: 600px;
+	}
+
+	div.wrapper div.core div.main-product div.card {
+		width: 159px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	div.wrapper {
+		width: 600px;
+	}
+
+	div.wrapper div.core {
+		width: 600px;
+	}
+
+	div.wrapper div.core div.main-product {
+		margin-top: 0;
+		margin-left: 20px;
+		width: 400px;
+	}
+
+	div.wrapper div.core div.main-product div.card {
+		width: 152px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	div.wrapper {
+		width: 95%;
+	}
+
+	div.wrapper div.core {
+		display: block;
+		width: 95%;
+	}
+
+	div.wrapper div.core div.filter {
+		display: none;
+	}
+
+	div.filter-for-mobile {
+		display: block;
+	}
+
+	div.wrapper div.core div.main-product {
+		justify-content: space-between;
+		margin: 0;
+		width: 100%;
+	}
+
+	div.wrapper div.core div.main-product div.card {
+		height: auto;
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	div.wrapper div.core div.main-product {
+		display: block;
+	}
+
+	div.wrapper div.core div.main-product div.card {
+		float: left;
+		margin: 0 4%;
+		margin-bottom: 20px;
+		width: 42%;
+	}
+}

@@ -1,0 +1,290 @@
+div.category-menu {
+	height: 100px;
+	margin: auto;
+	margin-top: 40px;
+	position: relative;
+	width: 1000px;
+}
+
+div.category-menu div.main-category {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+div.category-menu div.main-category div.item {
+	cursor: pointer;
+	margin: 0 20px;
+	position: relative;
+	width: 130px;
+}
+
+div.category-menu div.main-category div.item:hover p {
+	color: #2c598a;
+}
+
+div.category-menu div.main-category div.item img {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 50px;
+}
+
+div.category-menu div.main-category div.item p {
+	color: #333333;
+	font-family: "Open Sans";
+	font-size: 15px;
+	margin-top: 10px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* number of lines to show */
+	-webkit-box-orient: vertical;
+}
+
+div.modal-body div.main-category {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+div.modal-body div.main-category div.item {
+	cursor: pointer;
+	margin: 0 10px;
+	width: 90px;
+}
+
+div.modal-body div.main-category div.item:hover p {
+	color: #2c598a;
+}
+
+div.modal-body div.main-category div.item img {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 50px;
+}
+
+div.modal-body div.main-category div.item p {
+	color: #333333;
+	font-family: "Open Sans";
+	font-size: 15px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+div.promo {
+	box-shadow: 1px 2px 25px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	height: auto;
+	margin: auto;
+	margin-bottom: 80px;
+	margin-top: 30px;
+	position: relative;
+	width: 1100px;
+}
+
+div.promo div.card-header {
+	background-color: #008cd7;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-sizing: border-box;
+	height: 60px;
+	position: relative;
+}
+
+div.promo div.card-header p {
+	font-family: "Open Sans";
+	font-size: 15px;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+div.promo div.card-header button {
+	background-color: white;
+	border: none;
+	border-radius: 3px;
+	color: #008cd7;
+	font-family: "Nunito";
+	font-weight: 600;
+	padding: 4px 10px;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translate(0, -50%);
+	transition: 0.2s;
+}
+
+div.promo div.card-header button:hover {
+	background-color: #eee;
+}
+
+div.promo div.bottom {
+	background-color: white;
+	border: 1px solid #ddd;
+	border-top: none;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	padding: 30px;
+	width: 100%;
+}
+
+div.promo div.bottom div.card {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px;
+	border: none;
+	border-radius: 7px;
+	margin: 0 12px;
+	width: 150px;
+}
+
+div.promo div.bottom div.card div.card-body {
+	margin-top: 5px;
+	padding: 0;
+}
+
+div.promo div.bottom div.card div.card-body p.card-text {
+	color: #333333;
+	font-size: 15px;
+	line-height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* number of lines to show */
+	-webkit-box-orient: vertical;
+}
+
+div.promo div.bottom div.card div.card-body p.oldPrice {
+	color: #777777;
+	font-size: 14px;
+	margin-top: 5px;
+	text-decoration: line-through;
+}
+
+div.promo div.bottom div.card div.card-body p.newPrice {
+	color: #2c598a;
+	font-family: "Nunito";
+	font-size: 15px;
+	font-weight: 600;
+	margin-top: 5px;
+}
+
+div.product-wrapper {
+	height: auto;
+	margin: auto;
+	margin-bottom: 70px;
+	position: relative;
+	width: 1100px;
+}
+div.product-wrapper h2.title {
+	color: #222222;
+	font-family: "Open Sans";
+	font-size: 21px;
+	font-weight: 600;
+}
+
+div.product-wrapper div.main-product {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+div.product-wrapper div.main-product button {
+	background-color: #eee;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	color: #444;
+	font-size: 15px;
+	height: 40px;
+	outline: none;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 40px;
+	z-index: 1;
+}
+
+div.product-wrapper div.main-product button.slick-prev {
+	left: -10px;
+}
+
+div.product-wrapper div.main-product button.slick-next {
+	right: -10px;
+}
+
+div.product-wrapper div.main-product div.card {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px;
+	border: none;
+	border-radius: 7px;
+	margin: 0 10px;
+	margin-bottom: 7px;
+	width: 163px;
+}
+
+.slick-slide {
+	outline: none;
+}
+
+div.product-wrapper div.main-product div.card div.card-body {
+	margin-top: 10px;
+	padding: 0;
+}
+
+div.product-wrapper div.main-product div.card div.card-body p.card-text {
+	color: #333333;
+	font-size: 15px;
+	line-height: 22px;
+	padding: 0 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* number of lines to show */
+	-webkit-box-orient: vertical;
+}
+
+div.product-wrapper div.main-product div.card div.card-body p.price {
+	color: #2c598a;
+	font-family: "Nunito";
+	font-size: 15px;
+	font-weight: 600;
+	margin-top: 5px;
+	padding: 0 10px;
+}
+
+div.product-wrapper div.main-product div.card div.card-body p.oldPrice {
+	color: #777777;
+	font-size: 14px;
+	margin-top: 5px;
+	padding: 0 10px;
+	text-decoration: line-through;
+}
+
+div.product-wrapper div.main-product div.card div.card-body p.newPrice {
+	color: #2c598a;
+	font-family: "Nunito";
+	font-size: 15px;
+	font-weight: 600;
+	margin-top: 5px;
+	padding: 0 10px;
+}
+
+div.product-wrapper button.more {
+	background-color: white;
+	border: 1px solid #008cd7;
+	border-radius: 3px;
+	color: #008cd7;
+	font-size: 15px;
+	left: 50%;
+	margin-top: 10px;
+	padding: 5px 20px;
+	position: relative;
+	transform: translate(-50%, 0);
+}
+
+div.product-wrapper button:hover {
+	background-color: #eee;
+}

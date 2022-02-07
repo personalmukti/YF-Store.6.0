@@ -1,0 +1,178 @@
+div.wrapper {
+	min-height: auto;
+	position: relative;
+	margin: auto;
+	margin-top: 30px;
+	width: 1100px;
+}
+
+div.wrapper div.navigation a {
+	font-size: 13px;
+}
+
+div.wrapper div.navigation i {
+	font-size: 15px;
+	position: relative;
+	margin: 0 1px;
+	top: 2px;
+}
+
+div.wrapper div.core {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+div.wrapper div.core div.product {
+	height: auto;
+	margin-bottom: 70px;
+	width: 700px;
+}
+
+div.wrapper div.core div.product h3.title {
+	font-family: "Nunito";
+	font-size: 20px;
+}
+
+div.wrapper div.core div.product div.item {
+	box-sizing: border-box;
+	height: auto;
+	position: relative;
+	width: 100%;
+}
+
+div.wrapper div.core div.product div.item img {
+	border-radius: 5px;
+	float: left;
+	height: 95px;
+	margin-right: 10px;
+	object-fit: cover;
+	width: 95px;
+}
+
+div.wrapper div.core div.product div.item h2.title {
+	color: #222222;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 600;
+}
+
+div.clearfix {
+	clear: both;
+}
+
+div.wrapper div.core div.product div.item h3.price {
+	color: tomato;
+	font-family: "Nunito";
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 10px;
+}
+
+div.wrapper div.core div.product div.item p.note {
+	cursor: pointer;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+div.wrapper div.core div.product div.item input.inputNote {
+	border: none;
+	border-bottom: 1px solid darksalmon;
+	color: #444444;
+	display: none;
+	font-family: "Open Sans";
+	font-size: 15px;
+	outline: none;
+	padding: 5px 0;
+	width: 200px;
+}
+
+div.wrapper div.core div.product div.item i.fa-trash {
+	bottom: 0;
+	color: #777777;
+	position: absolute;
+	right: 10px;
+}
+
+div.wrapper div.core div.total {
+	align-self: flex-start;
+	border-radius: 5px;
+	/* box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.1); */
+	box-sizing: border-box;
+	height: auto;
+	margin-bottom: 50px;
+	padding: 20px;
+	position: sticky;
+	top: 90px;
+	width: 370px;
+}
+
+div.wrapper div.core div.total h2.title {
+	font-size: 18px;
+	font-family: "Open Sans";
+	font-weight: 600;
+}
+
+div.wrapper div.core div.total div.list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+div.wrapper div.core div.total div.list p {
+	color: #555555;
+	font-family: "Nunito";
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1150px) {
+	div.wrapper {
+		width: 900px;
+	}
+
+	div.wrapper div.core div.product {
+		width: 500px;
+	}
+
+	div.wrapper div.core div.product div.item h2.title {
+		font-size: 14px;
+	}
+
+	div.wrapper div.core div.product div.item h3.price {
+		font-size: 15px;
+	}
+
+	div.wrapper div.core div.total {
+		width: 350px;
+	}
+
+	div.wrapper div.core div.total h2.title {
+		font-size: 16px;
+	}
+
+	div.wrapper div.core div.total div.list p {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	div.wrapper {
+		width: 90%;
+	}
+
+	div.wrapper div.core {
+		display: block;
+	}
+
+	div.wrapper div.core div.product {
+		display: block;
+		margin-bottom: 30px;
+		width: 100%;
+	}
+
+	div.wrapper div.core div.total {
+		display: block;
+		width: 100%;
+	}
+}

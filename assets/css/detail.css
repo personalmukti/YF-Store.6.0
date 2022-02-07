@@ -1,0 +1,265 @@
+div.wrapper {
+	height: auto;
+	margin: auto;
+	margin-bottom: 70px;
+	margin-top: 20px;
+	position: relative;
+	width: 1200px;
+}
+
+div.wrapper div.navigation a {
+	font-size: 13px;
+}
+
+div.wrapper div.navigation i {
+	font-size: 15px;
+	position: relative;
+	margin: 0 1px;
+	top: 2px;
+}
+
+div.wrapper div.top {
+	margin-top: 15px;
+	height: auto;
+	width: 100%;
+}
+
+div.wrapper div.top div.main-top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+div.wrapper div.top div.main-top div.img img {
+	background-color: #eee;
+	height: 450px;
+	object-fit: cover;
+	width: 450px;
+}
+
+div.wrapper div.top div.main-top div.img-slider {
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	margin-top: 10px;
+	overflow-x: scroll;
+	width: 450px;
+}
+
+div.wrapper div.top div.main-top div.img-slider img {
+	border-radius: 5px;
+	cursor: pointer;
+	height: 80px;
+	margin-right: 10px;
+	transition: 0.2s;
+	width: 80px;
+}
+
+div.wrapper div.top div.main-top div.img-slider img:hover {
+	filter: brightness(0.9);
+}
+
+div.wrapper div.top div.main-top div.ket {
+	height: auto;
+	width: 700px;
+}
+
+div.wrapper div.top div.main-top div.ket h1.title {
+	font-size: 25px;
+}
+
+div.wrapper div.top div.main-top div.ket p.subtitle {
+	color: #666666;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 600;
+}
+
+div.wrapper div.top div.main-top div.ket table tr {
+	height: 32px;
+}
+
+div.wrapper div.top div.main-top div.ket table tr.newPrice td.price {
+	position: relative;
+	top: -10px;
+}
+
+div.wrapper div.top div.main-top div.ket table tr td.oldPrice {
+	color: #666666;
+	font-family: "Open Sans";
+	font-size: 14px;
+	text-decoration: line-through;
+}
+
+div.wrapper div.top div.main-top div.ket table tr td {
+	color: #111;
+	font-family: "Open Sans";
+	font-size: 15px;
+	font-weight: 400;
+}
+
+div.wrapper div.top div.main-top div.ket table tr td.t {
+	color: #555555;
+	font-family: "Nunito";
+	font-size: 16px;
+	width: 150px;
+}
+
+div.wrapper div.top div.main-top div.ket table tr td.price {
+	color: tomato;
+	font-family: "Open Sans";
+	font-size: 30px;
+	font-weight: 600;
+}
+
+div.wrapper div.top div.main-top div.ket table tr td div.form-group {
+	position: relative;
+	top: 5px;
+}
+
+div.wrapper div.top div.main-top div.ket table tr td button {
+	background-color: #eeeeee;
+	border: 1px solid #ccc;
+	font-family: "Nunito";
+	font-weight: 600;
+	height: 30px;
+	outline: none;
+	width: 30px;
+}
+
+div.wrapper div.top div.main-top div.ket table tr td input {
+	background-color: white;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	box-sizing: border-box;
+	text-align: center;
+	height: 30px;
+	outline: none;
+	position: relative;
+	top: 1px;
+	width: 50px;
+}
+
+div.wrapper div.description {
+	color: #666666;
+	margin-top: 20px;
+}
+
+div.wrapper div.description h2 {
+	font-size: 22px;
+}
+
+div.wrapper div.description h3 {
+	font-size: 19px;
+}
+
+div.wrapper div.description h4 {
+	font-size: 17px;
+}
+
+div.wrapper div.description p {
+	font-size: 14.5px;
+}
+
+div.wrapper div.description img {
+	width: 50%;
+}
+
+@media screen and (max-width: 1250px) {
+	div.wrapper {
+		width: 1000px;
+	}
+
+	div.wrapper div.top div.main-top div.img img {
+		height: 370px;
+		width: 370px;
+	}
+
+	div.wrapper div.top div.main-top div.img-slider {
+		width: 370px;
+	}
+
+	div.wrapper div.top div.main-top div.img-slider img {
+		height: 80px;
+		width: 80px;
+	}
+
+	div.wrapper div.top div.main-top div.ket {
+		width: 600px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	div.wrapper {
+		width: 800px;
+	}
+
+	div.wrapper div.top div.main-top div.img img {
+		height: 300px;
+		width: 300px;
+	}
+
+	div.wrapper div.top div.main-top div.img-slider {
+		width: 300px;
+	}
+
+	div.wrapper div.top div.main-top div.img-slider img {
+		height: 70px;
+		width: 70px;
+	}
+
+	div.wrapper div.top div.main-top div.ket {
+		width: 450px;
+	}
+
+	div.wrapper div.top div.main-top div.ket h1.title {
+		font-size: 20px;
+	}
+
+	div.wrapper div.top div.main-top div.ket table tr {
+		height: 20px;
+	}
+
+	div.wrapper div.top div.main-top div.ket table tr td.price {
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	div.wrapper {
+		width: 90%;
+	}
+
+	div.wrapper div.top div.main-top {
+		display: block;
+	}
+
+	div.wrapper div.top div.main-top div.img img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+	div.wrapper div.top div.main-top div.img-slider {
+		width: 100%;
+	}
+
+	div.wrapper div.top div.main-top div.img-slider img {
+		height: 70px;
+		width: 70px;
+	}
+
+	div.wrapper div.top div.main-top div.ket {
+		display: block;
+		width: 100%;
+	}
+
+	div.wrapper div.top div.main-top div.ket table {
+		width: 100%;
+	}
+
+	div.wrapper div.description {
+		width: 100%;
+	}
+}

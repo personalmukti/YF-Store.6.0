@@ -1,0 +1,266 @@
+/* navbar */
+@media screen and (max-width: 800px) {
+	.fixed-top {
+		position: relative !important;
+	}
+
+	nav.navbar a.navbar-brand h3 {
+		font-size: 23px;
+	}
+
+	nav.navbar button.navbar-toggler {
+		font-size: 15px;
+	}
+
+	div.top-nav {
+		display: none;
+	}
+}
+
+/* footer subsriber */
+@media screen and (max-width: 1150px) {
+	footer div.subscribe div.main {
+		width: 900px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	footer div.subscribe div.main {
+		width: 700px;
+	}
+
+	footer div.subscribe div.main div.text p {
+		font-size: 14px;
+	}
+
+	nav.navbar a.navbar-brand {
+		margin-left: 10px;
+	}
+
+	i.btn-for-dropdown {
+		color: white;
+		cursor: pointer;
+		display: block;
+		float: right;
+		font-size: 20px;
+		margin-right: 10px;
+		margin-left: 15px;
+	}
+
+	i.search-mobile {
+		display: block;
+		float: left;
+		top: 0;
+	}
+
+	div.for-hidden {
+		display: none;
+	}
+
+	i.search-icon-desktop {
+		display: none;
+	}
+
+	.photo-profile-mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	footer div.subscribe {
+		height: auto;
+		padding: 20px 0;
+	}
+
+	footer div.subscribe div.main {
+		display: block;
+		width: 90%;
+	}
+
+	footer div.subscribe div.main div.text {
+		display: block;
+		width: 100%;
+	}
+
+	footer div.subscribe div.main div.text h2 {
+		font-size: 20px;
+	}
+
+	footer div.subscribe div.main div.text p {
+		font-size: 12.5px;
+	}
+
+	footer div.subscribe div.main div.form {
+		display: block;
+		width: 100%;
+	}
+
+	footer div.subscribe div.main div.form input {
+		font-size: 14px;
+		height: 40px;
+		width: calc(100% - 100px);
+	}
+
+	footer div.subscribe div.main div.form button {
+		height: 40px;
+		font-size: 14px;
+		width: 100px;
+	}
+}
+
+/* footer information */
+@media screen and (max-width: 1150px) {
+	footer div.information div.main {
+		width: 800px;
+	}
+
+	footer div.information div.main div.about {
+		width: 200px;
+	}
+
+	footer div.information div.main div.about p {
+		font-size: 13px;
+	}
+
+	footer div.information div.main div.about div.sosmed a {
+		font-size: 15px;
+	}
+
+	footer div.information div.main div.item h3.title {
+		font-size: 15px;
+	}
+
+	footer div.information div.main div.item a,
+	footer div.information div.main div.item p {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	footer div.information div.main {
+		width: 600px;
+	}
+
+	footer div.information div.main div.item-hide {
+		display: none;
+	}
+
+	footer div.information-for-mobile {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	footer div.information div.main {
+		padding: 20px;
+		width: 90%;
+	}
+
+	footer div.information div.about-hide {
+		display: none;
+	}
+
+	footer div.about-for-mobile {
+		display: block;
+	}
+
+	footer div.information div.main div.item-hide {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	footer div.information div.main div.item {
+		display: block;
+		width: 100%;
+	}
+	footer div.information div.main div.item-hide {
+		display: none;
+	}
+	footer div.information div.main div.item h3.title {
+		font-size: 14px;
+	}
+
+	footer div.information div.main div.item a,
+	footer div.information div.main div.item p {
+		font-size: 12px;
+	}
+}
+
+/* footer contact */
+@media screen and (max-width: 1250px) {
+	footer div.contact div.main {
+		width: 900px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	footer div.contact {
+		height: 100px;
+	}
+
+	footer div.contact div.main {
+		width: 800px;
+	}
+
+	footer div.contact div.main div.item i {
+		font-size: 20px;
+	}
+
+	footer div.contact div.main div.item p {
+		font-size: 13px;
+	}
+
+	div.carousel {
+		position: relative;
+	}
+
+	div.carousel img {
+		height: 230px;
+		left: 50%;
+		position: relative;
+		transform: translate(-50%, 0);
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	footer div.contact {
+		height: auto;
+	}
+
+	footer div.contact div.main {
+		display: block;
+		width: 90%;
+	}
+
+	footer div.contact div.main div.item {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+	footer div.contact div.main div.item i {
+		font-size: 17px;
+		text-align: center;
+		width: 100%;
+	}
+
+	footer div.contact div.main div.item p {
+		margin-top: 5px;
+	}
+}
+
+/* footer copyright */
+@media screen and (max-width: 400px) {
+	footer div.copyright {
+		display: block;
+		height: auto;
+	}
+
+	footer div.copyright p {
+		font-size: 12px;
+		padding: 10px 0;
+		position: relative;
+	}
+}

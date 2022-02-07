@@ -1,0 +1,92 @@
+div.wrapper {
+	height: auto;
+	position: relative;
+	margin: auto;
+	margin-bottom: 70px;
+	margin-top: 30px;
+	width: 1050px;
+}
+
+div.wrapper div.countdown {
+	background: linear-gradient(to right, #008cd7, #5ec7ff);
+	border-radius: 5px;
+	padding: 15px 30px;
+	width: 100%;
+}
+
+div.wrapper div.countdown p {
+	margin-bottom: 0;
+}
+
+div.wrapper div.main-product {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+div.wrapper div.main-product div.card {
+	border: none;
+	margin: 0 12px;
+	margin-bottom: 7px;
+	width: 151px;
+}
+
+div.wrapper div.main-product div.card:hover div.card-body p.card-text {
+	color: #008cd7;
+}
+
+div.wrapper div.main-product div.card div.card-body {
+	margin-top: 10px;
+	padding: 0;
+}
+
+div.wrapper div.main-product div.card div.card-body p.card-text {
+	color: #333333;
+	font-size: 15px;
+	line-height: 22px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* number of lines to show */
+	-webkit-box-orient: vertical;
+}
+
+div.wrapper div.main-product div.card div.card-body p.oldPrice {
+	color: #777777;
+	font-size: 14px;
+	margin-top: 5px;
+	text-decoration: line-through;
+}
+
+div.wrapper div.main-product div.card div.card-body p.newPrice {
+	color: #2c598a;
+	font-family: "Nunito";
+	font-size: 15px;
+	font-weight: 600;
+	margin-top: 5px;
+}
+
+@media screen and (max-width: 1150px) {
+	div.wrapper {
+		width: 700px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	div.wrapper {
+		width: 95%;
+	}
+
+	div.wrapper div.countdown p {
+		font-size: 13px;
+	}
+
+	div.wrapper div.main-product {
+		justify-content: space-between;
+	}
+
+	div.wrapper div.main-product div.card {
+		width: 120px;
+	}
+}

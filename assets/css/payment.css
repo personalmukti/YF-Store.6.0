@@ -1,0 +1,110 @@
+div.wrapper {
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	justify-content: space-between;
+	margin: auto;
+	margin-bottom: 70px;
+	margin-top: 40px;
+	position: relative;
+	width: 1100px;
+}
+
+div.wrapper div.core {
+	height: auto;
+	width: 650px;
+}
+
+div.wrapper div.core div.line {
+	background-color: #dddddd;
+	border-radius: 20px;
+	height: 3px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+div.wrapper div.core div.products {
+	width: 100%;
+}
+
+div.wrapper div.core div.products table {
+	border: none;
+}
+
+div.wrapper div.address h2.title {
+	color: #333333;
+	font-size: 20px;
+}
+
+div.wrapper div.total {
+	align-self: flex-start;
+	border-radius: 5px;
+	/* box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.1); */
+	box-sizing: border-box;
+	height: auto;
+	margin-bottom: 50px;
+	padding: 20px;
+	position: sticky;
+	top: 90px;
+	width: 410px;
+}
+
+div.wrapper div.total {
+	align-self: flex-start;
+	border-radius: 5px;
+	/* box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.1); */
+	box-sizing: border-box;
+	height: auto;
+	margin-bottom: 0px;
+	margin-top: 30px;
+	padding: 20px;
+	position: sticky;
+	top: 90px;
+	width: 400px;
+}
+
+div.wrapper h2.title {
+	font-size: 18px;
+	font-family: "Open Sans";
+	font-weight: 600;
+}
+
+div.wrapper div.total div.list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+div.wrapper div.total div.list p {
+	color: #555555;
+	font-family: "Nunito";
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1150px) {
+	div.wrapper {
+		width: 900px;
+	}
+
+	div.wrapper div.core {
+		width: 450px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	div.wrapper {
+		display: block;
+		width: 90%;
+	}
+
+	div.wrapper div.core {
+		display: block;
+		width: 100%;
+	}
+
+	div.wrapper div.total {
+		display: block;
+		width: 100%;
+	}
+}
