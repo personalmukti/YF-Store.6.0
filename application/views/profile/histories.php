@@ -10,14 +10,18 @@
                     <th>Order ID</th>
                     <th>Tanggal Pesan</th>
                     <th>Total Pembayaran</th>
-                    <th>#</th>
+                    <th>Opsi</th>
+                    <th>Rating</th>
                 </tr>
                 <?php foreach($finish->result_array() as $d): ?>
                     <tr>
                         <td><?= $d['invoice_code']; ?></td>
                         <td><?= $d['date_input']; ?></td>
                         <td>Rp<?= number_format($d['total_all'],0,",","."); ?></td>
-                        <td><small><a href="<?= base_url(); ?>profile/transaction/<?= $d['invoice_code']; ?>" class="btn btn-info btn-sm">Detail</a></small> - <small><a href="<?= base_url(); ?>profile/transaction/<?= $d['invoice_code']; ?>" class="btn btn-warning btn-sm">Berikan Rating</a></small></td>
+                        <td><small><a href="<?= base_url(); ?>profile/transaction/<?= $d['invoice_code']; ?>" class="btn btn-info btn-sm">Detail</a></small></td>
+                        <td>
+                            <a href="<?= base_url(); ?>profile/rating/<?= $d['invoice_code']; ?>" class="btn btn-warning btn-sm">Rating</a>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </table>
