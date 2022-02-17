@@ -12,6 +12,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    
+
     <link rel="stylesheet" href="<?= base_url(); ?>assets/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/css/app.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url();  ?>assets/css/app-responsive.css">
@@ -24,7 +26,13 @@
       type="image/x-icon"
     />
 
+    <!-- Bootstrap Star Rating CSS -->
+    <link href='<?= base_url() ?>assets/vendor/bootstrap-star-rating/css/star-rating.min.css' type='text/css' rel='stylesheet'>
+    
+    
+
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            
     <script
       src="https://kit.fontawesome.com/2baad1d54e.js"
       crossorigin="anonymous"
@@ -40,7 +48,15 @@
 
     <link rel="stylesheet" href="<?= base_url(); ?>assets/lightbox2-2.11.1/dist/css/lightbox.css">
 
+
+
     <title><?= $title ?></title>
+
+    <style>
+      .checked {
+        color: orange;
+    }
+</style>
   </head>
   <body>
 
