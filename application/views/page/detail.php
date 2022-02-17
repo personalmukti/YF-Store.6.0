@@ -24,6 +24,8 @@
                 <h1 class="title"><?= $product['title']; ?></h1>
                 <p class="subtitle">Terjual <?= $product['transaction']; ?> Produk &bull; <?= $product['viewer']; ?>x Dilihat</p>
                 <hr>
+                    [RATING DISINI]
+                <hr>
                 <table>
                     <?php if($setting['promo'] == 1){ ?>
                     <?php if($product['promo_price'] == 0){ ?>
