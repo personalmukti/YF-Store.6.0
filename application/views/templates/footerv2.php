@@ -93,10 +93,40 @@ $rekening = $this->db->get('rekening');
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src='<?= base_url() ?>assets/vendor/bootstrap-star-rating/js/star-rating.min.js' type='text/javascript'></script>
     <script src="<?= base_url(); ?>assets/js/jquery.countdown.min.js"></script>
     <script src="<?= base_url(); ?>assets/lightbox2-2.11.1/dist/js/lightbox.js"></script>
     <script src="<?= base_url(); ?>assets/select2-4.0.6-rc.1/dist/js/select2.min.js"></script>
-    <script>
+
+    
+
+    <script type='text/javascript'>
+        $(document).ready(function(){
+
+            // Initialize
+            $('.ratingbar').rating({
+                showCaption:false,
+                showClear: false,
+                size: 'sm'
+            });
+
+            // Rating change
+            $('.ratingbar').on('rating:change', function(event, value, caption) {
+                var id = this.id;
+                var splitid = id.split('_');
+                var postid = splitid[1];
+                
+                $.ajax({
+                    url: '<?= base_url() ?>profile/updateRating',
+                    type: 'post',
+                    data: {postid: postid, rating: value},
+                    success: function(response){
+                        $('#averagerating_'+postid).text(response);
+                    }
+                });
+            });
+        });
+
         $('.recent-product').slick({
             infinite: false,
             slidesToShow: 6,
@@ -286,4 +316,19 @@ $rekening = $this->db->get('rekening');
         }
 
     </script>
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6200f2e79bd1f31184db4f02/1fr9r9n1i';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
 </html>
