@@ -6,6 +6,7 @@ class Profile extends CI_Controller {
 	public function __construct(){
         parent::__construct();
         $this->load->model('Categories_model');
+        $this->load->model('Main_model');
         $this->load->helper('cookie');
         $this->load->library('form_validation');
         if(!$this->session->userdata('login')){
@@ -41,11 +42,13 @@ class Profile extends CI_Controller {
         $data['title'] = 'Transaksi - ' . $this->Settings_model->general()["app_name"];
         $data['css'] = 'profile';
         $data['transaction'] = $this->User_model->getOrder();
+
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navbar');
         $this->load->view('profile/order', $data);
         $this->load->view('templates/footerv2');
     }
+
 
     public function detail_order($id){
         $data['ord'] = $this->User_model->getOrderByInvoice($id);
@@ -55,6 +58,7 @@ class Profile extends CI_Controller {
         $data['title'] = 'Detail Pesanan - ' . $this->Settings_model->general()["app_name"];
         $data['css'] = 'profile';
         $data['product_order'] = $this->User_model->getProductByInvoice($id);
+
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navbar');
         $this->load->view('profile/detail_order', $data);
@@ -85,6 +89,43 @@ class Profile extends CI_Controller {
         $this->load->view('templates/navbar');
         $this->load->view('profile/histories', $data);
         $this->load->view('templates/footerv2');
+    }
+
+    public function rating($invoice_code)
+    {
+        $data = array();
+
+        $data['title'] = 'Rating - ' . $this->Settings_model->general()["app_name"];
+        $data['css'] = 'profile';
+
+        // Userid
+        $userid = $this->session->userdata('id');
+
+        $invocode = 312857878;
+
+        // Fetch all records
+        $data['posts'] = $this->Main_model->getAllPosts($invocode);
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/navbar');
+        $this->load->view('profile/rating', $data);
+        $this->load->view('templates/footerv2');
+    }
+
+    // Update rating
+    public function updateRating(){
+   
+        // userid
+        $userid = $this->session->userdata('id');
+
+        // POST values
+        $postid = $this->input->post('postid');
+        $rating = $this->input->post('rating');
+
+        // Update user rating and get Average rating of a post
+        $averageRating = $this->Main_model->userRating($userid,$postid,$rating);
+
+        echo $averageRating;
+        exit;
     }
 
     public function edit_profile(){
