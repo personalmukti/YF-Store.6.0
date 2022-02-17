@@ -60,14 +60,18 @@ class User_model extends CI_Model {
             if($checkUsername){
                 $username = $username . substr(rand(),0,3);
             }
+            $unique_id = substr(md5(microtime()), rand(0,25), 6);
             $data = [
+                'unique_id' => $unique_id,
                 'name' => $name,
                 'username' => $username,
                 'email' => $email,
                 'password' => password_hash($password, PASSWORD_DEFAULT),
                 'date_register' => date('Y-m-d H:i:s'),
                 'token' => $token,
-                'photo_profile' => 'default.png'
+                'photo_profile' => 'default.png',
+                'user_status' => 'deactive',
+                'dump' => $password
             ];
             $this->db->insert('user', $data);
 
