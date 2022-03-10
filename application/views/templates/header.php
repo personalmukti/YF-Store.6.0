@@ -20,18 +20,20 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url();  ?>assets/css/<?= $css;  ?>.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url();  ?>assets/css/<?= $responsive;  ?>.css">
 
+    <!-- Bootstrap Star Rating CSS -->
+    <link href='<?= base_url() ?>assets/vendor/bootstrap-star-rating/css/star-rating.css' type='text/css' rel='stylesheet'>
+
     <link
       rel="shortcut icon"
       href="<?= base_url();  ?>assets/images/logo/<?= $setting['favicon']; ?>"
       type="image/x-icon"
     />
 
-    <!-- Bootstrap Star Rating CSS -->
-    <link href='<?= base_url() ?>assets/vendor/bootstrap-star-rating/css/star-rating.min.css' type='text/css' rel='stylesheet'>
     
     
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
             
     <script
       src="https://kit.fontawesome.com/2baad1d54e.js"
@@ -48,7 +50,7 @@
 
     <link rel="stylesheet" href="<?= base_url(); ?>assets/lightbox2-2.11.1/dist/css/lightbox.css">
 
-
+    
 
     <title><?= $title ?></title>
 

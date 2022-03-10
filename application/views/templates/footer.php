@@ -112,8 +112,7 @@ $rekening = $this->db->get('rekening');
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="<?= base_url(); ?>assets/js/jquery.countdown.min.js"></script>
-    <!-- Bootstrap Star Rating JS -->
-    <script src='<?= base_url() ?>assets/vendor/bootstrap-star-rating/js/star-rating.min.js' type='text/javascript'></script>
+    
     <script>
 
         $("i.icon-search-navbar").on('click', function(){
